@@ -1,0 +1,56 @@
+.title-item {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: no-repeat center  url('/img/Background-image.png');
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    text-align: center;
+}
+
+.welcomeText {
+    text-align: center;
+    color: azure;
+
+    margin-top: 200px;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+}
+
+p, a.btn {
+    font-size: 20px;
+}
+
+
+.card-text{
+    text-align: center !important;
+}
+
+a.place, .place {
+    color: #2d3436 !important;
+}
+
+a.place:hover{
+    color: #00b894 !important;
+    text-decoration: none;
+}
+
+.align-item-center {
+    align-self: center;
+}
+
+
+.block {
+    justify-content: center !important;
+    text-align: center;
+}
