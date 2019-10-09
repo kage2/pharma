@@ -11,7 +11,7 @@
               data-wow-delay="0.4s"
               v-show="!pharm_selected"
             >
-              <a class="image-popup" :title="pharm.name">
+              <a class="image-popup" :title="pharm.name" >
                 <img src="/img/Blog-post/post-8.jpg" class="img-responsive" :alt="pharm.name" />
 
                 <div class="menu-info">

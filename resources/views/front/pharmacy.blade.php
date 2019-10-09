@@ -1,5 +1,10 @@
 @extends('layout')
 
 @section('content')
-    <products :pharms ="{{ $pharms }}"></products>
+
+   @foreach ($pharms as $pharm)
+        <a href="/{{ $pharm->id }}/products">{{ $pharm->name }}</a>
+   @endforeach
+
+
 @endsection

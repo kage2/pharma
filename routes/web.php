@@ -20,7 +20,9 @@ Route::get('/cities', 'Front\CitiesController@index')->name('cities');
 Route::get('/{city}/zones', 'Front\CitiesController@zone')->name('city.zones');
 Route::get('/{zone}/pharmacy', 'Front\CitiesController@pharmacy');
 
-Route::get('/{pharmacy}/{product}', 'Front\ProductsController@index');
+//Route::get('/{pharmacy}/{product}', 'Front\ProductsController@index');
+
+Route::get('/{pharmacy}/products', 'Front\PharmaciesController@getStock');
 
 
 
