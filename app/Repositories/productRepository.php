@@ -21,6 +21,7 @@ class productRepository
     {
         $result = false;
         $result = gzencode($data, 9);
+
         return $result;
     }
 
@@ -28,17 +29,18 @@ class productRepository
     {
         $result = false;
         $result = gzinflate(substr($data, 10, -8));
+        dd($result);
         return $result;
     }
 
     public function sendCurl($host, $url, $port, $login, $password, $data)
     {
         $header  = array(
-            'Content-Type: application/x-www-form-urlencoded',
-            'Connexion: close',
-            'Accept-Encoding: gzip'
+            "Content-Type: application/x-www-form-urlencoded",
+            "Connection: close",
+            "Accept-Encoding: gzip"
         );
-        $content = 'login=' . $login . '&password=' . $password . '&data=' . base64_decode($data);
+        $content = 'login=' . $login . '&password=' . $password . '&data=' . base64_encode($data);
 
         $ch = curl_init();
 
@@ -49,7 +51,7 @@ class productRepository
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-        curl_setopt($ch, CURLOPT_PORT, 1);
+        curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $content);
 
         $result  = curl_exec($ch);
@@ -74,9 +76,12 @@ class productRepository
 
         $encodedData = $this->dataEncode($xmlData);
 
+
         $encodedResponse = $this->sendCurl($this->host, $this->urlStock, $this->port, $login, $password, $encodedData);
 
         $response = $this->dataDecode($encodedResponse);
+
+
 
         return $response;
     }

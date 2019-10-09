@@ -112,6 +112,10 @@ html {
   padding-left: 60px;
 }
 
+.welcome .intro-text-para {
+  text-align: justify;
+}
+
 .intro-text-title {
   color: var(--title-color);
   font-size: var(--title-size);
@@ -125,7 +129,6 @@ html {
   font-size: var(--text-size);
   font-family: var(--font-para);
   line-height: 25px;
-  text-align: justify;
   margin-bottom: 30px;
 }
 
@@ -133,6 +136,24 @@ html {
   width: 560px;
   height: 385px;
   margin-top: -5px;
+}
+
+/*---------------------------------------------------------------------------*
+ * SECTION CHOOSE CITIES
+ *---------------------------------------------------------------------------*/
+
+.section-kage {
+  margin: 50px 30px 0 30px;
+}
+
+.city-content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.card-kage {
+  width: 300px;
 }
 
 /*---------------------------------------------------------------------------*

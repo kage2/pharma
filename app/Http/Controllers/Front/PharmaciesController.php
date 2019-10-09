@@ -19,8 +19,9 @@ class PharmaciesController extends Controller
     public function getStock($id)
     {
         $num_pharma = Pharmacy::find($id);
+        //dd($num_pharma->num_pharma);
         $stocks = $this->stock->QueryStock($num_pharma->num_pharma, $num_pharma->login, $num_pharma->password);
 
-        dd($stocks);
+
     }
 }
