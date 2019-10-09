@@ -1,31 +1,16 @@
 <!-- MENU BAR -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-              <i class="fa fa-line-chart"></i>
-              Digital Trend
-            </a>
+<nav class="navbar-kage">
+    <a href="/" class="brand-name">FindYourDrugs</a>
+    <div class="navbar-items-kage">
+        <a class="responsive-button">
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        </a>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link smoothScroll">Studio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#project" class="nav-link smoothScroll">Our Works</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="blog.html" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="items">
+            <a href="" class="link-item-kage link-item-color active">Welcome</a>
+            <a href="" class="link-item-kage link-item-color">Nos pharmacies</a>
+            <a href="" class="link-item-kage log-in">A propos</a>
+            <a href="/contact" class="link-item-kage sign-up btn-kage btn-color">Contact</a>
         </div>
-    </nav>
+    </div>
+</nav>

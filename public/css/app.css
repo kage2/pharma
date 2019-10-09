@@ -1,59 +1,182 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
-.title-item {
-  font-size: 35px;
-  font-weight: bold;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
 body {
-  background: no-repeat center url("/img/Background-image.png");
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  font-family: var(--font-text), sans-serif;
+  font-size: var(--text-size);
 }
 
-.title {
-  text-align: center;
+/*********variable***************/
+
+html {
+  --text-color: #657783;
+  --text-size: 14px;
+  --button-color: #E53167;
+  --button-border: #707070;
+  --title-color: #223242;
+  --title-size: 50px;
+  --title-secondary-size: 25px;
+  --title-brand-color: #3480E3;
+  --title-brand-size: 20px;
+  --title-brand-font: "SF Display Bold";
+  --log-color: #222529;
+  --menu-color: #707070;
+  --font-text: "SF Display Medium";
+  --font-title: "SF Display Thin";
+  --font-para: "SF Display Light";
 }
 
-.welcomeText {
-  text-align: center;
-  color: azure;
-  margin-top: 200px;
+/*********variable***************/
+
+.navbar-kage {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 160px 0 160px;
 }
 
-h1 {
-  font-size: 35px;
-  font-weight: bold;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: azure;
+.brand-name,
+.brand-name:hover {
+  text-decoration: none;
+  font-size: var(--title-brand-size);
+  font-family: var(--title-brand-font);
+  color: var(--title-brand-color);
+  line-height: 20px;
 }
 
-p,
-a.btn {
-  font-size: 20px;
+.link-item-kage {
+  margin-right: 40px;
+  text-decoration: none !important;
+  font-family: var(--font-text);
+  font-size: var(--text-size);
+  line-height: 18px;
 }
 
-.card-text {
-  text-align: center !important;
+.link-item-kage:last-child {
+  margin-right: 0px;
 }
 
-a.place,
-.place {
-  color: #2d3436 !important;
+.link-item-color {
+  color: var(--menu-color);
 }
 
-a.place:hover {
-  color: #00b894 !important;
+.link-item-color:hover,
+.log-in:hover,
+.active {
+  font-family: var(--title-brand-font);
+  color: var(--title-brand-color);
+  text-decoration: none !important;
+}
+
+.log-in {
+  color: var(--log-color);
+}
+
+.sign-up {
+  color: #FFFFFF;
+}
+
+.btn-kage {
+  width: 80px;
+  height: 20px;
+  border-radius: 36px;
+  padding: 10px 20px;
+}
+
+.btn-color {
+  background-color: var(--button-color);
+  border: 1px solid var(--button-border);
+  color: #FFFFFF;
   text-decoration: none;
 }
 
-.align-item-center {
-  align-self: center;
+.btn-color:hover {
+  background-color: var(--button-color);
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
-.block {
-  justify-content: center !important;
-  text-align: center;
+.items .btn-kage {
+  margin-top: -12px;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 100px 0px 100px;
+}
+
+.welcome {
+  padding-left: 60px;
+}
+
+.intro-text-title {
+  color: var(--title-color);
+  font-size: var(--title-size);
+  font-family: var(--font-title);
+  line-height: 70px;
+  margin: 0 auto;
+}
+
+.intro-text-para {
+  color: var(--text-color);
+  font-size: var(--text-size);
+  font-family: var(--font-para);
+  line-height: 25px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.intro-image img {
+  width: 560px;
+  height: 385px;
+  margin-top: -5px;
+}
+
+/*---------------------------------------------------------------------------*
+ * SF UI Display
+ *---------------------------------------------------------------------------*/
+
+/** Bold */
+
+@font-face {
+  font-family: "SF Display Bold";
+  font-weight: 700;
+  src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
+}
+
+/** Light */
+
+@font-face {
+  font-family: "SF Display Light";
+  font-weight: 200;
+  src: url("https://sf.abarba.me/SF-UI-Display-Light.otf");
+}
+
+/** Medium */
+
+@font-face {
+  font-family: "SF Display Medium";
+  font-weight: 500;
+  src: url("https://sf.abarba.me/SF-UI-Display-Medium.otf");
+}
+
+/** Regular */
+
+@font-face {
+  font-family: "SF Display Regular";
+  font-weight: 400;
+  src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
+}
+
+/** Thin */
+
+@font-face {
+  font-family: "SF Display Thin";
+  font-weight: 300;
+  src: url("https://sf.abarba.me/SF-UI-Display-Thin.otf");
 }
 
 /*!

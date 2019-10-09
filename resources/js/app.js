@@ -33,12 +33,3 @@ Vue.component('products', require('./components/Products/Products.vue').default)
 const app = new Vue({
     el: '#app',
 });
-
-
-    let nav = document.querySelector('#nav-tabContent');
-    let navTitle = document.querySelector('#nav-tab');
-
-    window.addEventListener('pageshow', () => {
-        nav.children[0].classList.add('active');
-        navTitle.children[0].classList.add('active');
-    })

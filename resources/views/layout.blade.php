@@ -8,19 +8,19 @@
             <meta name="author" content="">
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <title>Laravel</title>
+        <title>FindYourDrugs</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" type="text/css" href="/css/app.css" />
-        <link rel="stylesheet" href="/public/css/all.min.css">
-        <link rel="stylesheet" type="text/css" href="/css/templatemo-digital-trend.css" />
+        <link rel="stylesheet" href="/css/all.min.css">
+
         <link rel="stylesheet" type="text/css" href="/css/aos.css" />
         @yield('css')
     </head>
     <body>
 
         <div id="app">
-            @include('incs.nav')
+            @include('incs.navbar')
             <div class="container">
                 @yield('content')
             </div>
