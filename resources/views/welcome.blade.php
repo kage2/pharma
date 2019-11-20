@@ -32,7 +32,7 @@
                             Aenean sed nibh a magna posuere tempor. Nunc faucibus pellentesque nunc in aliquet. Donec congue, nunc vel tempor congue, enim sapien lobortis ipsum, in volutpat sem ex in ligula. Nunc purus est, consequat
                     </p>
 
-                    <a href="/cities" class="btn-kage btn-color" data-aos="fade-up" data-aos-delay="100">Get Started</a>
+                    <a href="/city" class="btn-kage btn-color" data-aos="fade-up" data-aos-delay="100">Get Started</a>
                 </div>
                 <div class="intro-image" data-aos="fade-up" data-aos-delay="300">
                     <img src="/img/office.png" alt="pharma image">

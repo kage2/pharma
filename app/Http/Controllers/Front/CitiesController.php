@@ -9,20 +9,31 @@ use App\Models\Zone;
 
 class CitiesController extends Controller
 {
+
+
     public function index()
     {
-        return view('front.city', [
-            'cities' => City::get()
+            $cities =City::get();
+            return view('front.city', [
+                'cities' => $cities
+            ]);
+
+    }
+
+    public function show($id)
+    {
+        $cities = City::find($id)->zones()->get();
+
+        return view('front.show', [
+            'cities' => $cities
         ]);
     }
 
     public function zone($id)
     {
-        $zones = City::find($id)->with('zones')->get();
+        $zones = City::find($id)->zones()->get();
 
-        return view('front.city', [
-            'zones' => $zones
-        ]);
+        return response()->json($zones);
     }
 
 
@@ -30,7 +41,7 @@ class CitiesController extends Controller
     {
         $pharms = Zone::find($id_zone)->pharmacies()->get();
 
-       
+
 
         return view('front.pharmacy', [
             'pharms' => $pharms

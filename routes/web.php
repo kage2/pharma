@@ -16,8 +16,10 @@ Route::get('/', function () {
 });
 
 
-Route::get('/cities', 'Front\CitiesController@index')->name('cities');
+Route::get('/city', 'Front\CitiesController@index')->name('city');
+Route::get('/cities', 'Front\CitiesController@getCity');
 Route::get('/{city}/zones', 'Front\CitiesController@zone')->name('city.zones');
+Route::get('/{city}', 'Front\CitiesController@show')->name('city.show');
 Route::get('/{zone}/pharmacy', 'Front\CitiesController@pharmacy');
 
 //Route::get('/{pharmacy}/{product}', 'Front\ProductsController@index');

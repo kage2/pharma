@@ -4,18 +4,18 @@
 
     <section  class="section-kage">
             <div class="section-header">
-                <h1 class="intro-text-title">In which city are you?</h1>
-                <p class="intro-text-para">Choose your city to direct the search.</p>
+                <h1 class="intro-text-title">In which zone are you?</h1>
+                <p class="intro-text-para">Choose your zone to direct the search.</p>
             </div>
             <div class="city-content">
-                @foreach ($cities as $city)
+                @foreach ($cities as $zone)
                     <div class=" card-kage">
                             <div class="city" >
                                 <div class="card-kage-image">
                                     <img src="/img/undraw_messaging_uok8.png" alt="undraw_messaging_uok8" />
                                 </div>
                                 <div class="card-kage-body">
-                                    <h2 class="intro-text-title-secondary"> <a href="/{{ $city->id}}">{{ $city->name }}</a> </h2>
+                                    <h2 class="intro-text-title-secondary"> <a href="/{{ $zone->id }}/pharmacy"> {{ $zone->name }} </a></h2>
                                     <p
                                     class="intro-text-para text-zone"
                                     >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
